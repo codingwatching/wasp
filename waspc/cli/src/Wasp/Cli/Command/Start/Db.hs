@@ -33,7 +33,7 @@ import Wasp.Util (whenM)
 import qualified Wasp.Util.Network.Socket as Socket
 
 -- | Command-line arguments for `wasp start db`
-data StartDbArgs = StartDbArgs
+newtype StartDbArgs = StartDbArgs
   { customImage :: Maybe String
   }
 
