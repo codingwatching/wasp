@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.21.2
+
+### 🔧 Small improvements
+
+- `REACT_APP_API_URL` is now **required** when building the client for production (it no longer defaults to any value). In development mode, it still defaults to the local server URL. This prevents silently broken production deployments where the client can't reach the server. ([#3740](https://github.com/wasp-lang/wasp/pull/3740))
+
 ## 0.21.1
 
 ### 🐞 Bug fixes
